@@ -1,0 +1,128 @@
+import { Restaurant } from '../types/restaurant';
+
+export const mockRestaurants: Restaurant[] = [
+  {
+    id: '1',
+    name: 'Bella Italia',
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop&q=60',
+    rating: 4.5,
+    distance: 2.3,
+    cuisine: 'Italian',
+    priceRange: '$$',
+    description: 'Authentic Italian cuisine in a cozy atmosphere',
+    popularDishes: ['Margherita Pizza', 'Fettuccine Alfredo', 'Tiramisu'],
+    dietaryOptions: ['Vegetarian Options', 'Gluten-Free Options'],
+    address: '123 Main St, Foodville',
+    coordinates: { lat: 40.7128, lng: -74.0060 },
+    ambiance: ['Romantic', 'Casual'],
+    cuisineFeatures: ['Neapolitan pizza'],
+    serviceOptions: ['Dine-in', 'Takeout', 'Delivery']
+  },
+  {
+    id: '2',
+    name: 'Sakura Sushi',
+    image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=800&auto=format&fit=crop&q=60',
+    rating: 4.8,
+    distance: 1.5,
+    cuisine: 'Japanese',
+    priceRange: '$$$',
+    description: 'Premium sushi and Japanese specialties',
+    popularDishes: ['Omakase Set', 'Dragon Roll', 'Miso Black Cod'],
+    dietaryOptions: ['Gluten-Free Options'],
+    address: '456 Sushi Lane, Foodville',
+    coordinates: { lat: 40.7129, lng: -74.0061 },
+    ambiance: ['Fine dining', 'Modern'],
+    cuisineFeatures: ['Fusion cuisine'],
+    serviceOptions: ['Dine-in', 'Takeout']
+  },
+  {
+    id: '3',
+    name: 'Taco Fiesta',
+    image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&auto=format&fit=crop&q=60',
+    rating: 4.2,
+    distance: 0.8,
+    cuisine: 'Mexican',
+    priceRange: '$',
+    description: 'Authentic street tacos and Mexican favorites',
+    popularDishes: ['Street Tacos', 'Enchiladas', 'Guacamole'],
+    dietaryOptions: ['Vegetarian Options'],
+    address: '789 Taco St, Foodville',
+    coordinates: { lat: 40.7130, lng: -74.0062 },
+    ambiance: ['Casual', 'Family-friendly'],
+    cuisineFeatures: ['Regional specialties'],
+    serviceOptions: ['Dine-in', 'Takeout', 'Delivery']
+  },
+  {
+    id: '4',
+    name: 'Le Petit Bistro',
+    image: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&auto=format&fit=crop&q=60',
+    rating: 4.7,
+    distance: 3.1,
+    cuisine: 'French',
+    priceRange: '$$$',
+    description: 'Classic French cuisine with a modern twist',
+    popularDishes: ['Coq au Vin', 'French Onion Soup', 'Crème Brûlée'],
+    dietaryOptions: ['Vegetarian Options'],
+    address: '789 Bistro Lane, Foodville',
+    coordinates: { lat: 40.7131, lng: -74.0063 },
+    ambiance: ['Fine dining', 'Romantic'],
+    cuisineFeatures: ['Farm-to-table'],
+    serviceOptions: ['Dine-in']
+  },
+  {
+    id: '5',
+    name: 'Spice Garden',
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&auto=format&fit=crop&q=60',
+    rating: 4.4,
+    distance: 1.9,
+    cuisine: 'Indian',
+    priceRange: '$$',
+    description: 'Authentic Indian cuisine with rich flavors',
+    popularDishes: ['Butter Chicken', 'Biryani', 'Naan'],
+    dietaryOptions: ['Vegetarian Options', 'Vegan Options'],
+    address: '101 Spice Ave, Foodville',
+    coordinates: { lat: 40.7132, lng: -74.0064 },
+    ambiance: ['Casual', 'Family-friendly'],
+    cuisineFeatures: ['Regional specialties'],
+    serviceOptions: ['Dine-in', 'Takeout', 'Delivery']
+  },
+  // Adding more restaurants with similar structure...
+  {
+    id: '6',
+    name: 'Thai Orchid',
+    image: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&auto=format&fit=crop&q=60',
+    rating: 4.3,
+    distance: 2.5,
+    cuisine: 'Thai',
+    priceRange: '$$',
+    description: 'Authentic Thai dishes with fresh ingredients',
+    popularDishes: ['Pad Thai', 'Green Curry', 'Mango Sticky Rice'],
+    dietaryOptions: ['Vegetarian Options', 'Gluten-Free Options'],
+    address: '202 Thai Blvd, Foodville',
+    coordinates: { lat: 40.7133, lng: -74.0065 },
+    ambiance: ['Casual', 'Modern'],
+    cuisineFeatures: ['Regional specialties'],
+    serviceOptions: ['Dine-in', 'Takeout', 'Delivery']
+  },
+  // Continue adding more restaurants...
+  {
+    id: '7',
+    name: 'The Burger Joint',
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=60',
+    rating: 4.6,
+    distance: 1.2,
+    cuisine: 'American',
+    priceRange: '$$',
+    description: 'Gourmet burgers and craft beers',
+    popularDishes: ['Classic Cheeseburger', 'Truffle Fries', 'Milkshakes'],
+    dietaryOptions: ['Vegetarian Options'],
+    address: '303 Burger St, Foodville',
+    coordinates: { lat: 40.7134, lng: -74.0066 },
+    ambiance: ['Casual', 'Trendy'],
+    cuisineFeatures: ['Farm-to-table'],
+    serviceOptions: ['Dine-in', 'Takeout', 'Delivery']
+  }
+  // Note: Continue adding more restaurants following this pattern
+  // I've shown a representative sample, but you should add more following
+  // the same structure with different cuisines, locations, and details
+];

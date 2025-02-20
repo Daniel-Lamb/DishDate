@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --app-background: #FFFFFF;
+  --nav-background: #ff0000;
+}
+
+body {
+  background-color: var(--app-background);
+  transition: background-color 0.5s ease;
+}
+
+.nav-header {
+  background-color: var(--nav-background);
+  transition: background-color 0.5s ease;
+}
+
+.nav-footer {
+  background-color: var(--nav-background);
+  transition: background-color 0.5s ease;
+}
+
+.restaurant-card {
+  @apply fixed inset-4 z-10;
+}
+
+.restaurant-card-content {
+  @apply absolute inset-0 bg-white overflow-hidden;
+}
+
+.restaurant-image {
+  @apply w-full h-[60vh] object-cover;
+}
+
+.restaurant-info {
+  @apply absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent text-white p-6;
+}
+
+.swipe-overlay {
+  @apply fixed inset-0 pointer-events-none flex items-center justify-center z-20;
+}
+
+.swipe-indicator {
+  @apply text-9xl font-bold transform transition-transform;
+}
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--app-background);
+  z-index: 50;
+}
+
+.loading-icon {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+
+.loading-progress {
+  width: 200px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.loading-progress-bar {
+  height: 100%;
+  background-color: var(--nav-background);
+  animation: progress 2s ease-in-out infinite;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.loading-text {
+  animation: pulse 2s infinite;
+  color: var(--nav-background);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
